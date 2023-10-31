@@ -1,0 +1,64 @@
+IPR Übung 3
+Abgabe 6.11.2023
+Matteo Meysel
+
+Aufgabe 1:
+
+Eingabe:
+eine positive, ganze Zahl
+Problemstellung:
+die Zahl soll in binärer Schriftweise (rückwärts) ausgegeben werden.
+Ausgabe:
+die Zahl in binärer Schriftweise (rückwärts).
+
+Binärifizierung:
+int dezI = In.ReadInt();
+int rmaininDezI;
+int[] binI;
+
+rmaininDezI = dezI / 2;
+binI[0] = dezI % 2;
+
+
+Out.println("Please read backwards: " + binI);
+
+
+Aufgabe 2:
+
+Eingabe:
+2 Felder von ganzen Zahlen mit jeweils den x- und y-Koordinaten eines Punktes.
+Problemstellung:
+Gib alle Punkte aus, die im 1. Quadranten liegen, also von denen x und y > 0 sind.
+Ausgabe:
+alle Punkte, die im 1. Quadranten liegen.
+
+Quadrantenbestimmung:
+int[] x = {3, 4, 5, 13, 53, 1, 4, -3}
+int[] y = {5, 1, 5, -2, 42, 3, 5, 3}
+
+
+Out.println (outlist);
+		
+
+
+Aufgabe 3:
+
+Eingabe:
+ein Feld von ganzen Zahlen, die den y-Werten von Punkten mit dem Feld-index als x-Wert entsprechen 
+Problemstellung:
+Gehe alle y-Werte durch, um den größten, also das globale Maximum zu finden und gib den entsprechenden Punkt aus. Gibt es mehrere Maxima, gib nur eines davon aus.
+Ausgabe:
+x- und y-Wert des globalen Maximum-Punktes.
+
+Maximumfinder:
+Int[] y = {3, -4, 2, 4, 65, 3, 65, 3, -3}
+Int maxY = y[0];
+Int maxX = 0;
+For (int i = 1; i <= y.length; i++){
+	If (y[i] > maxY){
+		maxY = y[i];
+		maxX = i;
+	}
+}
+Out.println("global max: (" + maxX + "|" + maxY + ")"); 
+		
