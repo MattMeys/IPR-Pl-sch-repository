@@ -13,7 +13,12 @@ die Zahl in binärer Schriftweise (rückwärts).
 
 Binärifizierung:
 int dezI = In.ReadInt();
-int binI;
+int rmaininDezI;
+int[] binI;
+
+rmaininDezI = dezI / 2;
+binI[0] = dezI % 2;
+
 
 Out.println("Please read backwards: " + binI);
 
